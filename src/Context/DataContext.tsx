@@ -4,7 +4,7 @@ import "dayjs/locale/pt-br"
 import { useFetch } from "../Hooks/useFetch";
 dayjs.locale("pt-br")
 
-type DataContextType = {
+export type DataContextType = {
   data: VendasType[] | null;
   loading: boolean;
   error: string | null;

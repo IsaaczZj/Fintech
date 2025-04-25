@@ -86,11 +86,11 @@ ul {
       align-items: center;
       gap: var(--gap-sm);
 
-      &:hover span{
+      &:hover span {
         background-color: var(--color-tertiary);
       }
 
-      & span{
+      & span {
         background-color: var(--color-quaternary);
         border-radius: 50%;
         padding: 0.25rem;
@@ -99,7 +99,7 @@ ul {
         align-items: center;
       }
 
-      & a{
+      & a {
         flex: 1;
         font-size: 1.125rem;
         text-decoration: none;
@@ -110,12 +110,12 @@ ul {
 }
 
 /* daterange */
-.daterange{
+.daterange {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--gap);
 
-  & h1{
+  & h1 {
     text-align: center;
     align-content: center;
     height: 100%;
@@ -149,3 +149,4 @@ ul {
     color: inherit;
   }
 }
+
