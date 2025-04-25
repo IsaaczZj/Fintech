@@ -1,4 +1,4 @@
-import DateInput from "./DateInput";
+import DateInput from "./DateInput/DateInput";
 import { useData } from "../Context/DataContext";
 
 const DateRange = () => {

@@ -1,0 +1,16 @@
+.resumo {
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  & h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--gap);
+    color: var(--color-primary);
+  }
+}
+
+@media (max-width: 50rem) {
+  .resumo {
+    flex-direction: column;
+  }
+}

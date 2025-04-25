@@ -2,7 +2,7 @@ import React, { CSSProperties } from "react";
 import { useParams } from "react-router";
 import { DataContextType, useData, VendasType } from "../Context/DataContext";
 import { useFetch } from "../Hooks/useFetch";
-import Loading from "../Components/Loading";
+import Loading from "../Components/Loading/Loading";
 
 type VendaSemData = Omit<VendasType, "data">;
 

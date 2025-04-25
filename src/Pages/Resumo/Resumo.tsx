@@ -1,14 +1,14 @@
-import GraficoVendas from "../Components/GraficoVendas";
-import { useData } from "../Context/DataContext";
+import GraficoVendas from "../../Components/GraficoVendas";
+import { useData } from "../../Context/DataContext";
+import styles from "./Resumo.module.css";
 
 const Resumo = () => {
   const { data } = useData();
-  console.log(data);
 
   if (data === null) return null;
   return (
     <section>
-      <div className="resumo flex mb">
+      <div className={`${styles.resumo} flex mb`}>
         <div className="box">
           <h2>Vendas </h2>
           <span>
@@ -47,7 +47,7 @@ const Resumo = () => {
         </div>
       </div>
       <div className="box mb">
-        <GraficoVendas data={data}/>
+        <GraficoVendas data={data} />
       </div>
     </section>
   );

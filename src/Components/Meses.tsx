@@ -1,13 +1,13 @@
-import MesBtn from './MesBtn'
+import MesBtn from "./MesBtn/MesBtn";
 
 const Meses = () => {
   return (
-    <div className='flex'>
-      <MesBtn n={-2}/>
-      <MesBtn n={-1}/>
-      <MesBtn n={0}/>
+    <div className="flex">
+      <MesBtn n={-2} />
+      <MesBtn n={-1} />
+      <MesBtn n={0} />
     </div>
-  )
-}
+  );
+};
 
-export default Meses
+export default Meses;

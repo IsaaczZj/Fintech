@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import Header from "./Components/Header";
-import SideNav from "./Components/SideNav";
+import Header from "./Components/Header/Header";
+import SideNav from "./Components/SideNav/SideNav";
 import { DataContextProvider } from "./Context/DataContext";
-import Resumo from "./Pages/Resumo";
+import Resumo from "./Pages/Resumo/Resumo";
 import Vendas from "./Pages/Vendas";
-import "./Style.css";
+import "./Global.css";
 import Venda from "./Pages/Venda";
 function App() {
   return (

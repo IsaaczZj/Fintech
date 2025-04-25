@@ -1,7 +1,6 @@
 import React from "react";
 import { VendasType } from "../Context/DataContext";
 import {
-  CartesianGrid,
   Legend,
   Line,
   LineChart,
@@ -61,7 +60,7 @@ const GraficoVendas = ({ data }: { data: VendasType[] }) => {
             stroke="#82ca9d"
             strokeWidth={3}
           />
-          <Line type="monotone" dataKey="falha" stroke="#fff" strokeWidth={3} />
+          <Line type="monotone" dataKey="falha" stroke="#ff0000" strokeWidth={3} />
         </LineChart>
       </ResponsiveContainer>
     </div>

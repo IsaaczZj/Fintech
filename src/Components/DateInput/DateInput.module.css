@@ -1,0 +1,20 @@
+.labelStyle {
+  display: block;
+  margin-bottom: var(--gap-sm);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-secondary);
+  padding: 0.625rem 0.75rem;
+  background-color: var(--color-quaternary);
+  border-radius: var(--gap);
+}
+
+.inputStyle {
+  border: none;
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--color-secondary);
+  padding: 0.625rem 0.75rem;
+  background-color: var(--color-quaternary);
+  border-radius: var(--gap);
+}

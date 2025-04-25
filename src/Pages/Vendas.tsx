@@ -1,5 +1,5 @@
 import { useData } from "../Context/DataContext";
-import VendaItem from "../Components/VendaItem";
+import VendaItem from "../Components/Venda/VendaItem";
 
 const Vendas = () => {
   const { data } = useData();

@@ -1,0 +1,24 @@
+.venda {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--gap-sm);
+  align-items: center;
+  & div:last-child {
+    justify-self: end;
+  }
+  & a {
+    text-decoration: none;
+    color: inherit;
+    font-family: monospace;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 700px) {
+  .venda{
+    grid-template-columns: 1fr;
+    & div:last-child {
+      justify-self: start;
+    }
+  }
+}

@@ -1,7 +1,8 @@
 import { createContext, useEffect, useState } from "react";
-import DateRange from "./DateRange";
-import Meses from "./Meses";
+import DateRange from "../DateRange";
+import Meses from "../Meses";
 import { useLocation } from "react-router";
+import styles from "./Header.module.css";
 
 const Header = () => {
   const [title, setTitle] = useState("Resumo");
@@ -18,8 +19,8 @@ const Header = () => {
     }
   }, [location]);
   return (
-    <header className="mb">
-      <div className="mb daterange">
+    <header className={`${styles.header} mb`}>
+      <div className={`${styles.daterange} mb`}>
         <DateRange />
         <h1 className="box bg-tertiary">{title}</h1>
       </div>

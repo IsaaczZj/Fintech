@@ -1,0 +1,25 @@
+.daterange {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--gap);
+
+  & h1 {
+    text-align: center;
+    align-content: center;
+    height: 100%;
+  }
+}
+@media (max-width: 50rem) {
+  .daterange {
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+    & *:last-child {
+      grid-row: 1;
+    };
+   header{
+    text-align: center;
+   }
+    
+  }
+}
