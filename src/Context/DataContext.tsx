@@ -1,7 +1,8 @@
 import { createContext, useContext, useState } from "react";
 import dayjs from "dayjs";
-
+import "dayjs/locale/pt-br"
 import { useFetch } from "../Hooks/useFetch";
+dayjs.locale("pt-br")
 
 type DataContextType = {
   data: VendasType[] | null;
