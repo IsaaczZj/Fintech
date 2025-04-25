@@ -149,7 +149,6 @@ ul {
     color: inherit;
   }
 }
-
 @media (max-width: 50rem) {
   .resumo {
     flex-direction: column;

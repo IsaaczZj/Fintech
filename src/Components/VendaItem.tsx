@@ -6,7 +6,7 @@ const VendaItem = ({ venda }: { venda: VendasType }) => {
 
   return (
     <div className="box venda">
-      <NavLink to={`/vendas/${venda.id}`} style={{ fontFamily: "monospace" }}>
+      <NavLink to={`/vendas/${venda.id}`} style={{ fontFamily: "monospace", textDecoration:"underline" }}>
         {venda.id}
       </NavLink>
       <div>{venda.nome}</div>

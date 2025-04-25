@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, PropsWithChildren, useContext, useState } from "react";
 import dayjs from "dayjs";
 import "dayjs/locale/pt-br"
 import { useFetch } from "../Hooks/useFetch";
@@ -24,6 +24,7 @@ export type VendasType = {
 };
 
 const DataContext = createContext<DataContextType | null>(null);
+
 export const useData = () => {
   const context = useContext(DataContext);
   if (!context) throw new Error("useData precisa estar em DataContextProvider");
