@@ -13,7 +13,7 @@ type DataContextType = {
   final: string;
   setFinal: React.Dispatch<React.SetStateAction<string>>;
 };
-type VendasType = {
+export type VendasType = {
   id: string;
   nome: string;
   preco: number;
